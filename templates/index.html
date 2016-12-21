@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+
+{% for obj in object_list %}
+	
+	<h2><a href="{{ obj.id }}">{{ obj.title }}</a></h2>
+	postingan ini memiliki id {{ obj.id }} <br>
+	{{ obj.content }} <br>
+	dibuat : {{ obj.timestamp }} <br>
+	diedit : {{ obj.updated }} <br><br>
+
+{% endfor %}
